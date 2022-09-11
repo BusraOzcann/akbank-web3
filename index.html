@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKBANK WEB3</title>
+</head>
+<body>
+    <label for="number">Sayı : </label>
+    <input id="number" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+    <button onclick="oddishOrEvenish()">Sonuç Getir</button>
+    <span>
+        <h3><b id="sonuc"></b></h3>
+    </span>
+
+    <script src="main.js"></script>
+</body>
+</html>
